@@ -6,18 +6,18 @@
 Lets understand the definition. 
 Javascript runtime-Javascript creators designed and created the language to achieve dynamic functionality in browsers but they need something to execute the code. This something which executes the code is called **javascript runtime**. They created the javascript engine . Whenever a browser sees javascript content ,it passes it to the javascript engine and the engine executes it.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/Pijushm/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.11.56%20AM.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/pijushmlbd/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.11.56%20AM.png)
 
 
 Different browsers have different javascript  engines and implementations are different. And the javascript engine inside the chrome browser is called **V8 engine.**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/Pijushm/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.12.05%20AM.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/pijushmlbd/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.12.05%20AM.png)
 
 But this runtime could only work with DOM context and manipulates only  the browser’s element.  From this point, 
 What if we take the V8 engine out of the browser and use it for something more than manipulating DOM elements like file reading, calling network api,access system resources etc similar to other languages. 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/Pijushm/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.12.17%20AM.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/pijushmlbd/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.12.17%20AM.png)
 
 
 ### Node REPL
@@ -39,14 +39,14 @@ Start the prompt by using command and type node.
 That is there is only one application thread. The single processing thread just executes each of every event one by one . No two things are happening in parallel. If we pass something to execute node.js it will add behind the event queue. 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/Pijushm/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.12.29%20AM.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/pijushmlbd/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.12.29%20AM.png)
 
 
 Event loop is basically a loop of execution that picks up an event from the event queue and executes it. 
 
 But what if the event is time consuming  like I/O intensive, network call ? How is this handled in a single thread?does the thread wait for the execution to finish? No. because 
  >          Javascript is asynchronous 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/Pijushm/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.29.53%20AM.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Markdown Logo](https://github.com/pijushmlbd/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%201.29.53%20AM.png)
 
 The node.js api  does not wait for the response . rather it will deal with response later. When it gets the response , it is added to the back of the event queue. Node.js does this using something called **callbacks** . 
 
@@ -194,7 +194,7 @@ What if :
 Typescript comes as the solution:
 
 
-![image](https://github.com/Pijushm/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%2012.04.30%20AM.png)
+![image](https://github.com/pijushmlbd/nodejs-basics/blob/main/Screenshot%202022-04-11%20at%2012.04.30%20AM.png)
 
 
 Types:
