@@ -97,9 +97,10 @@ But the add function is not called? Because
            `Every node module is encapsulated by default.`
 
 Any function,variable do not get passed over by simply calling require function by default. So,we need to export them to tell node.js that we want to use it in other files. We can do that by using 
-                                               'module.exports'
+> 'module.exports'
+
 Anything we want to take out from the encapsulated module and access it, need to mention it.
-                                     'Module.exports =add;'
+>                                 'dodule.exports =add;'
 
 add.js
 
@@ -134,8 +135,9 @@ Similarly we can use any builtin node module <!-- Links -->https://nodejs.org/ap
 ## Typescript
 
  <!-- UL -->
--Very handy to use in a framework written in Javascript
--created by Microsoft
+ -Very handy to use in a framework written in Javascript 
+ <!-- UL -->
+ -created by Microsoft.
 
 ### Why Typescript?
 
@@ -156,8 +158,8 @@ All works fine. No way can we restrict a variable or object to contain only one 
   Function add(a,b){
              Return a+b;
          }
-       add (1,2)// 3 
-      add (1) //undefined
+     add (1,2)// 3 
+     add (1) //undefined
      add (1,4,3) //7 , 3 is ignored!!
 ```
         
@@ -179,7 +181,7 @@ console.log(person);
 var person={
     firstName : ‘John’,
     lastName : ‘David’,
-     foo : 10 //!!!
+    foo : 10 //!!!
 }
 ```
 No way to prevent a developer from doing that. Loosely structured object. 
