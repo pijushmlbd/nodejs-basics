@@ -22,7 +22,7 @@ What if we take the V8 engine out of the browser and use it for something more t
 
 ### Node REPL
 REPL is a  command line tool where we can try out node.js expressions. 
-Start the prompt by using command and type node. 
+Start the prompt by using command prompt and type node. 
 
 ### When to use node.js : EventLoop
  Node.js shines in the following kind of operations 
@@ -113,7 +113,7 @@ add.js
 
 main.js
 ```javascript
-  Var addFn=require(./add.js); // var {add }
+  var addFn=require(./add.js); // var {add }
   console.log(‘Hello’);
   //use the add function
    addFn(10,20);
@@ -167,7 +167,7 @@ All works fine. No way can we restrict a variable or object to contain only one 
 - Object related problems
 
 ```javascript
-  Var Person ={
+  var Person ={
 firstName: ‘John ’
 lastName : ‘David’
  }
@@ -176,7 +176,7 @@ lastName : ‘David’
 person.foo=10;
 console.log(person);
 
-Var person={
+var person={
     firstName : ‘John’,
     lastName : ‘David’,
      foo : 10 //!!!
